@@ -13,7 +13,7 @@ describe ('testing API server',()=>{
         
     })
     it('testing /square route', async()=>{
-        const response = await request.post('/square');
+        const response = await request.get('/square');
         expect(typeof response.body).toEqual('object');
     })
 })
